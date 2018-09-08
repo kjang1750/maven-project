@@ -7,8 +7,7 @@ pipeline {
               mvn -Dmaven.test.failure.ignore=true install
               ls ${WORKSPACE}/target/
         '''
-        stash name 'test', includes: "target/*"
-          }
-      }
-    }
+       }
+     }
+  }
 }
